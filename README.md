@@ -14,8 +14,11 @@ Then I want to store these customized recipes in some place.
 Next time I'll cook one of these recipes, I can check what I've done last time and if needed, edit, improve and store again.
 
 -Default React/JavaScript structure created by Vite
+
 -Styling: React-strap and Scss
+
 -Language: JavaScript
+
 -Database: browser IndexedDB with Dexie (data is stored on client browser storage)
 
 For future, this app will be the basis for another one, with back-end and feature improvements.
