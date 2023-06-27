@@ -92,8 +92,7 @@ export default function RecipeView({ id }) {
             if (confirm) {
               try {
                 db.recipes.delete(recipe?.id);
-                //alert(`Receita ${recipe?.title} apagada com sucesso`);
-                navigate(`/recipes`);
+                navigate("/");
               } catch (error) {
                 console.log(`Failed to delete ${recipe?.title}: ${error}`);
               }
