@@ -1,8 +1,11 @@
 # cooking-recipes-js
 
 Simple React Cooking Recipes Application
+
 Front-end only (with browser database)
+
 Purpose: learning and show my coding skills
+
 Language: portuguese-BR
 
 The idea emerged from the need that I have when I'm cooking at home.
