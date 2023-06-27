@@ -1,0 +1,58 @@
+@import "../../assets/colors.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0.5rem auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+.prepTimeDiffDiv {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.prepTimeInput {
+  max-width: 100px;
+}
+
+.difficultyInput {
+  max-width: 200px;
+}
+
+.servingsInput {
+  max-width: 100px;
+}
+
+.ingredientInputsDiv {
+  display: flex;
+}
+
+.methodsInput {
+  display: flex;
+}
+
+/*.ingredientDescInput {
+  
+}*/
+
+.ingredientQtyInput,
+.ingredientUnitInput {
+  max-width: 60px;
+}
+
+/*
+.buttonDiv {
+  display: flex;
+
+  justify-content: center;
+}*/

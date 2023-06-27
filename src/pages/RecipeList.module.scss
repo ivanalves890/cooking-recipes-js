@@ -1,0 +1,51 @@
+@import "../assets/colors.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0.5rem auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.link {
+  color: $white;
+  text-decoration: none;
+  font-size: 1.25rem;
+
+  text-justify: center;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.linkImage {
+  width: 50px;
+  border-radius: 0.25rem;
+}

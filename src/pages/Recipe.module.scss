@@ -1,0 +1,106 @@
+@import "../assets/colors.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0.5rem auto;
+}
+
+.header {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border: 1px solid red;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+
+.image {
+  padding: 1rem;
+  width: 100%;
+}
+
+.properties {
+  width: 100%;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+
+.tags {
+  width: 100%;
+  padding: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid red;
+  gap: 1rem;
+}
+
+.tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+
+  background-color: $grey;
+}
+
+.ingredientsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 1px solid red;
+}
+
+.ingredients {
+  width: 80%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.methodsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 1px solid red;
+}
+
+.methods {
+  width: 80%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.buttonsDiv {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+  border: 1px solid red;
+}
+
+@media (max-width: 300px) {
+  .header {
+    flex-wrap: wrap-reverse;
+    gap: 1rem;
+  }
+}
