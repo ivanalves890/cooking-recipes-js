@@ -2,6 +2,8 @@
 
 ## Simple Cooking Recipes React Application
 
+[On-line application running](https://recipes2.ivanalves.dev.br)
+
 Front-end only (with browser database)
 
 Language: portuguese-BR
@@ -28,10 +30,6 @@ Next time I'll cook one of these recipes, I can check what I've done last time a
 - Database: browser IndexedDB with Dexie (data is stored on client browser storage)
 
 For future, this app will be the basis for another one, with back-end and feature improvements.
-
-### On-line application running
-
-[Application running](https://recipes2.ivanalves.dev.br)
 
 ### Some screenshots:
 
