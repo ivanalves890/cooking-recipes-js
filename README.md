@@ -1,6 +1,6 @@
 # Cooking Recipes JS
 
-## Simple Cooking Recipes React Application
+Simple Cooking Recipes React Application
 
 [On-line application running](https://recipes2.ivanalves.dev.br)
 
