@@ -3,7 +3,6 @@ import { useLiveQuery } from "dexie-react-hooks";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PageLayout from "./components/PageLayout";
-import Home from "./pages/Home";
 import RecipesList from "./pages/RecipeList";
 import NewRecipe from "./pages/NewRecipe";
 import NoPage from "./pages/NoPage";
