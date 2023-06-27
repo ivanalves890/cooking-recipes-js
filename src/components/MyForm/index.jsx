@@ -163,7 +163,7 @@ export default function MyForm({ type, id }) {
     <div className={styles.container}>
       <div className={styles.header}>
         <h1>Nova receita</h1>
-        <Link to="/recipes">
+        <Link to="/">
           <Button>Receitas</Button>
         </Link>
       </div>

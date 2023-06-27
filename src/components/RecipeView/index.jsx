@@ -22,7 +22,7 @@ export default function RecipeView({ id }) {
     <div className={styles.container}>
       <div className={styles.header}>
         <h1>{recipe?.title}</h1>
-        <Link to="/recipes">
+        <Link to="/">
           <Button>Lista de Receitas</Button>
         </Link>
       </div>
