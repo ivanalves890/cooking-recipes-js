@@ -23,4 +23,8 @@ Next time I'll cook one of these recipes, I can check what I've done last time a
 
 For future, this app will be the basis for another one, with back-end and feature improvements.
 
+On-line application:
+
+https://recipes2.ivanalves.dev.br
+
 Some screenshots:
