@@ -144,7 +144,7 @@ export default function MyForm({ type, id }) {
   if (type === "edit") {
     useEffect(() => {
       if (recipe) {
-        console.log(recipe);
+        //console.log(recipe);
 
         setRecipeId(recipe.id);
         setTitle(recipe.title);
