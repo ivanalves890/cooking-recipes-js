@@ -20,7 +20,7 @@ export default function Router() {
           <Route path="/" element={<PageLayout />}>
             <Route path="/new-recipe" element={<NewRecipe />} />
 
-            <Route path="/recipes/" element={<RecipesList />} />
+            {/*<Route path="/recipes/" element={<RecipesList />} />*/}
 
             {recipes?.map((recipe) => (
               <Route
@@ -38,7 +38,7 @@ export default function Router() {
               />
             ))}
 
-            <Route index element={<Home />} />
+            <Route index element={<RecipesList />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

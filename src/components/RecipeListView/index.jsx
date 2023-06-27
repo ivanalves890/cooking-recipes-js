@@ -11,7 +11,7 @@ export default function RecipeListView() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h1>Lista de receitas TESTE</h1>
+        <h1>Lista de receitas</h1>
         <Link to="/new-recipe">
           <Button>Nova</Button>
         </Link>
