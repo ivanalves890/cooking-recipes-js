@@ -21,18 +21,23 @@ export default function RecipeView({ id }) {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h1>{recipe?.title}</h1>
+        <div className={styles.title}>
+          <h1>{recipe?.title}</h1>
+        </div>
+
         <Link to="/">
           <Button>Lista de Receitas</Button>
         </Link>
       </div>
 
       <div className={styles.main}>
-        <img
-          src={recipe?.imageUrl}
-          alt={recipe?.imageUrl}
-          className={styles.image}
-        />
+        {recipe?.imageUrl ? (
+          <img
+            src={recipe?.imageUrl}
+            alt={recipe?.imageUrl}
+            className={styles.image}
+          />
+        ) : null}
 
         <div className={styles.properties}>
           <div>Tempo: {recipe?.prepTime} min</div>
@@ -42,9 +47,9 @@ export default function RecipeView({ id }) {
 
         <div className={styles.tags}>
           {recipe?.tags.map((tag, index) => (
-            <div key={"tag" + index} className={styles.tag}>
+            <Button key={"tag" + index} className={styles.tag}>
               {tag}
-            </div>
+            </Button>
           ))}
         </div>
       </div>

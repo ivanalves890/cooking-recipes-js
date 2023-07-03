@@ -22,7 +22,7 @@ export default function RecipeListView() {
           <div key={recipe.id} className={styles.row}>
             <img src={recipe.imageUrl} alt="img" className={styles.linkImage} />
             <Link to={`/recipes/${recipe.id}`} className={styles.link}>
-              {recipe.title}
+              <div className={styles.linkText}>{recipe.title}</div>
             </Link>
           </div>
         ))}
