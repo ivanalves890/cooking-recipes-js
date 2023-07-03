@@ -14,6 +14,7 @@ import {
   Label,
 } from "reactstrap";
 import { useLiveQuery } from "dexie-react-hooks";
+import ButtonRemove from "../ButtonRemove";
 
 export default function MyForm({ type, id }) {
   let recipe;
@@ -254,11 +255,11 @@ export default function MyForm({ type, id }) {
 
             <Button onClick={addTag}>+</Button>
           </InputGroup>
-          <div>
+          <div className={styles.tags}>
             {tags.map((tag, index) => (
-              <span key={index}>
-                {tag} <Button onClick={(ev) => removeTag(ev, index)}>-</Button>
-              </span>
+              <div key={index} className={styles.tagItem}>
+                {tag} <ButtonRemove onClick={(ev) => removeTag(ev, index)} />
+              </div>
             ))}
           </div>
         </FormGroup>
@@ -305,11 +306,13 @@ export default function MyForm({ type, id }) {
             <Button onClick={addIngredient}>+</Button>
           </InputGroup>
 
-          <ul>
+          <ul className={styles.ingredients}>
             {ingredients.map((ingredient, index) => (
               <li key={index}>
-                {ingredient[1]} {ingredient[2]} {ingredient[0]}
-                <Button onClick={(ev) => removeIngredient(ev, index)}>-</Button>
+                <div className={styles.igredientItem}>
+                  {ingredient[1]} {ingredient[2]} {ingredient[0]}
+                  <ButtonRemove onClick={(ev) => removeIngredient(ev, index)} />
+                </div>
               </li>
             ))}
           </ul>
@@ -328,14 +331,19 @@ export default function MyForm({ type, id }) {
             <Button onClick={addMethod}>+</Button>
           </InputGroup>
 
-          <div>
+          <ol className={styles.methods}>
             {methods.map((method, index) => (
-              <p key={index}>
-                {method}
-                <Button onClick={(ev) => removeMethod(ev, index)}>-</Button>
-              </p>
+              <li key={index}>
+                <div className={styles.methodItem}>
+                  {method}
+                  <ButtonRemove
+                    onClick={(ev) => removeMethod(ev, index)}
+                    className={styles.buttonRemove}
+                  />
+                </div>
+              </li>
             ))}
-          </div>
+          </ol>
         </FormGroup>
 
         <div className={styles.buttonDiv}>

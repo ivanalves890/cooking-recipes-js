@@ -33,12 +33,52 @@
   max-width: 100px;
 }
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  //flex-direction: column;
+  padding-top: 0.5rem;
+}
+
+.tagItem {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0.25rem 0.5rem;
+}
+
 .ingredientInputsDiv {
   display: flex;
 }
 
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
+}
+
+.igredientItem {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0.25rem 0;
+}
+
 .methodsInput {
   display: flex;
+}
+
+.methods {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
+}
+
+.methodItem {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0.25rem 0;
 }
 
 /*.ingredientDescInput {
@@ -52,6 +92,5 @@
 
 .buttonDiv {
   display: flex;
-
   justify-content: end;
 }
